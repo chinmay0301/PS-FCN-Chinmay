@@ -26,7 +26,7 @@ This implementation uses CUDA 8.0, scipy, numpy, pytorch 0.4.1, and python 2.7
 
 -  Clone the repository from github -:
 
->``` git clone ```
+>``` git clone https://github.com/chinmay0301/PS-FCN-Chinmay ```
 
 -  In the data folder, run the scripts to download the DiLigent and Blobby datasets. The authors train their model on both the Blobby and Sculpture datasets, but due to lack of time and compute resources, I trained them only on the blobby Dataset. 
 
