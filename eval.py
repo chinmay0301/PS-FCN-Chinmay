@@ -15,8 +15,8 @@ model = model.PS_FCN_run(args.use_BN, in_c)
 print('Loading Saved Model')
 saved_model = torch.load(args.model_path)
 if args.cuda:
-	saved_model = saved_model.cuda()
- 	model = model.cuda()
+    saved_model = saved_model.cuda()
+    model = model.cuda()
 model.load_state_dict(saved_model.state_dict())
 
 test_set  = DiLiGenT_main(args, 'test')
