@@ -95,7 +95,7 @@ You can refer to images for other objects and models trained using the different
 
 The above table suggests that one does not get any improvements using batch normalization on this dataset, infact the performance worsens slightly. Comparing visual results for the batch normalized and un-normalized case in the ResultsNotebook folder shows no stark difference as well. On Training the model without batch normalization and without a dilated convolution layer, the mean error was observed to be 9.805. Hence one can infer that these 2 techniques do not give any significant improvement for this problem.
 
-On observing that batch normalization does not fetch much improvement, I trained the model using the masked loss approach without batch normalization on a similar setup as in the above experiment. Using the masked loss suffers significantly in performance on the test dataset, giving a mean loss of 15 as compared to the other approaches.
+On observing that batch normalization does not fetch much improvement, I trained the model using the masked loss approach without batch normalization on a similar setup as in the above experiment. Using the masked loss suffers significantly in performance on the test dataset, giving a mean loss of 13.8 which is not great when compared to the other approaches.
 
 
 ### Other ideas to test and aspects to work on-:
