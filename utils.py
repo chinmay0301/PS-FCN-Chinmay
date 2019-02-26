@@ -69,7 +69,6 @@ class Criterion_mask(object):
         out_reshape = out_normal.permute(0, 2, 3, 1).contiguous().view(-1, 3)
         true_reshape = true_normal.permute(0, 2, 3, 1).contiguous().view(-1, 3)
         loss_pixel = 1 - f.cosine_similarity(out_reshape, true_reshape, dim=1)
-        print(loss_pixel.mean())
         loss_pixel = loss_pixel / loss_pixel.max()
         mask = torch.bernoulli(loss_pixel)
         mask = mask.detach()
